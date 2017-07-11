@@ -1,0 +1,42 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "status": "1",
+      "task": "Learn Angular"
+    },
+    {
+      "id": 2,
+      "status": "1",
+      "task": "Build WebA"
+    },
+    {
+      "id": 3,
+      "status": "1",
+      "task": "j Query DOM"
+    },
+    {
+      "id": 4,
+      "status": "1",
+      "task": "foo"
+    },
+    {
+      "id": 5,
+      "status": "1",
+      "task": "etdt"
+    },
+    {
+      "id": 6,
+      "status": "1",
+      "task": "ej"
+    },
+    {
+      "id": 7,
+      "status": "0",
+      "task": "hej"
+    }
+  ],
+  "users": [
+    {}
+  ]
+}
