@@ -3,7 +3,7 @@ body{
     color: #1a4c67;
     margin: 0;
     padding: 0;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
 }
 
 .container{
@@ -20,7 +20,7 @@ header{
     font-size: 50px;
     text-align: center;
 }
-header>#timer>img
+header>#headertext>img
 {
     height: 100px;
     width: 100px;
@@ -29,7 +29,7 @@ header>#timer>img
     right: 15px;
     /*border-right: 1px dotted #58C1E8 ;*/
 }
-#logo
+#clock
 {
     width: 25%;
     float: left;
@@ -40,7 +40,7 @@ h3{
     font-size: 80px;
     margin: 0;
 }
-#timer
+#headertext
 {
     float: left;
     width: 75%;
@@ -76,12 +76,24 @@ h1{
     padding: 0 10%;
 }
 
+
 .title{
     height: 10%;
     position: relative;
     text-align: center;
-    background: #58C1E8;
+    background-color: #58C1E8;
+    border-right: 2px dotted #58C1E8;
+    border-left: 2px dotted #58C1E8;
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -ms-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
 }
+.title.active{
+    background-color: #d8ecf3;
+}
+
 h2{
     position: absolute;
     top: 50%;
@@ -91,12 +103,6 @@ h2{
     margin: -14px 0 0 0;
     padding: 0;
 }
-.active
-{
-    background: #d8ecf3;
-    border-right: 2px dotted #58C1E8;
-    border-left: 2px dotted #58C1E8;
-}
 
 footer{
     clear: both;
@@ -104,3 +110,4 @@ footer{
     background: #1a4c67;
     width: 100%
 }
+

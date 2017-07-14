@@ -1,29 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pl">
 
 <head>
+
+    <meta author="Mateusz Pach, Szymon Cader">
+    <meta name ='description' content='Tablica ogłoszeń V Liceum Ogólnokształcącego w Bielsku-Białej'>
+    <title>Ogłoszenia</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://www.lo5.bielsko.pl/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://www.lo5.bielsko.pl/img/favicon.ico" type="image/x-icon">
+
+    <!-- Javascript -->
     <!-- jQuery JS 3.1.0 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <!-- jQuery UI JS 1.12.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <!-- CRUD API -->
+
+
+    <!-- TEMPORARY ADDRESS!!! CHANGE AFTER UPLOAD!!! -->
+    <script src="http://localhost:2403/dpd.js"></script>
+    
+    
+    
+    <!-- News script -->
+    <script src="news.js"></script>
+    <!-- Clock script -->
+    <script src="clock.js"></script>
+    <!-- Main JS file -->
+    <script src="main.js"></script>
+
+    <!-- Stylesheets -->
     <!-- Bootstrap CSS 3.3.7 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >  
+    <!-- Google Fonts Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Main CSS file -->
     <link rel="stylesheet" href="main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <title>Document</title>
 </head>
 
 <body>
+
     <div class="container">
 
         <header>
-            <div id="logo">
-                <h3>21:00/02:00</h3>
+            <div id="clock">
+                <h3>21:37</h3>
             </div>
-            <div id="timer">
+            <div id="headertext">
                 <h3>Ogłoszenia</h3>
                 <img src="logo.svg" alt="">
             </div>
@@ -32,11 +63,11 @@
         </header>
         
         <section id="sidebar">
-            <div class="title"><h2>Lorem Ipsum</h2></div>
-            <div class="title"><h2>Lorem Ipsum</h2></div>
-            <div class="title"><h2>Lorem Ipsum</h2></div>
-            <div class="title"><h2>Lorem Ipsum</h2></div>
-            <div class="title"><h2>Lorem Ipsum</h2></div>
+            <div class="title"><h2></h2></div>
+            <div class="title"><h2></h2></div>
+            <div class="title"><h2></h2></div>
+            <div class="title"><h2></h2></div>
+            <div class="title"><h2></h2></div>
             <div class="title"><h2></h2></div>
             <div class="title"><h2></h2></div>
             <div class="title"><h2></h2></div>
@@ -48,11 +79,11 @@
         </section>
 
         <footer>
-
+            Beta version
         </footer>
 
     </div>
-    <script src="main.js"></script>
+
 </body>
 
 </html>
