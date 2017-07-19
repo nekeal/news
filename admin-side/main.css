@@ -3,7 +3,11 @@ body{
     color: #1a4c67;
     margin: 0;
     padding: 0;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
+}
+
+p, h1{
+    line-height: 1.1;
 }
 
 .container{
@@ -15,13 +19,25 @@ body{
 
 header{
     height: 100px;
+    margin: 0;
     background: #1a4c67;
     color: #fff;
-    font-size: 50px;
     text-align: center;
 }
-header>#timer>img
-{
+
+h2{
+    line-height: 1;
+    font-size: 50px;
+    margin: 0;
+}
+
+h1{
+    font-size: 80px;
+    margin: 0;
+}
+
+
+header>#headertext>img{
     height: 100px;
     width: 100px;
     position: absolute;
@@ -29,24 +45,28 @@ header>#timer>img
     right: 15px;
     /*border-right: 1px dotted #58C1E8 ;*/
 }
-#logo
-{
+
+#clock{
+    height: 100px;
     width: 25%;
     float: left;
     border-right:2px dotted #58C1E8 ;
     padding: 5px 0;
 }
-h3{
+
+#clock>p{
     font-size: 80px;
     margin: 0;
+    padding: 0;
 }
-#timer
-{
+
+#headertext{
     float: left;
     width: 75%;
     text-transform: uppercase;
     padding: 5px 0;
 }
+
 #sidebar{
     position: relative;
     float: left;
@@ -65,8 +85,8 @@ h3{
     background: #d8ecf3;
 }
 
-h1{
-    text-align: justify;
+#content>p{
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -74,33 +94,130 @@ h1{
     width: 100%;
     height: 800px;
     padding: 0 10%;
+    font-size: 50px;
 }
+
 
 .title{
     height: 10%;
     position: relative;
     text-align: center;
-    background: #58C1E8;
+    background-color: #58C1E8;
+    border-right: 2px dotted #58C1E8;
+    border-left: 2px dotted #58C1E8;
+    -webkit-transition: background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    -ms-transition: background-color 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in;
+    transition: background-color 0.5s ease-in;
 }
-h2{
+.title.active{
+    background-color: #d8ecf3;
+}
+
+h3{
     position: absolute;
     top: 50%;
     height: 100%;
     width: 100%;
-    font-size: 28px;    
-    margin: -14px 0 0 0;
+    font-size: 40px;    
+    margin: -20px 0 0 0;
     padding: 0;
-}
-.active
-{
-    background: #d8ecf3;
-    border-right: 2px dotted #58C1E8;
-    border-left: 2px dotted #58C1E8;
 }
 
 footer{
-    clear: both;
-    height:80px;
+    height:20px;
     background: #1a4c67;
-    width: 100%
+    width: 100%;
+    color: #d8ecf3;
+    text-align: center;
+}
+
+#form{
+    display: display;
+    width: 80%;
+    height: 500px;
+    position: relative;
+    margin: 50px auto;
+
+}
+
+label{
+    margin: 0;
+    font-size: 18px;
+}
+
+input{
+    font-size: 20px;
+    width: 100%;
+    margin: 10px 0 50px 0;
+    border: 1px solid #58C1E8;
+}
+
+textarea {
+    font-size: 20px;
+    margin: 10px 0 50px 0;
+    width: 100%;
+    height: 300px;
+    resize: none;
+    border: 1px solid #58C1E8;
+}
+
+#form>.option{
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 10px 5px 50px 5px;
+    height: 50px;
+    width: 32.443%;
+    color: #1a4c67;
+    background:#58C1E8;
+    border: 1px solid #58C1E8;
+    text-align: center; 
+    float: left;
+}
+
+#submit:hover{
+    background:#58C1E8;
+    cursor: pointer;
+}
+
+#submit:active{
+    background:#5eff5e;
+}
+
+#chooseform{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.formoption{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    padding: 45px 0;
+    background-color: #d8ecf3;
+}
+
+.formoption:hover{
+    background:#58C1E8;
+}
+
+.titlebutton{
+    position: absolute;
+    
+    width: 30px;
+    height: 30px;
+}
+
+.remove{
+    right: 5px;
+    bottom: 5px;
+    background: red;
+}
+
+.edit{
+    right: 5px;
+    top: 5px;
+    background: green;
 }
