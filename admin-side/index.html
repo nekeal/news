@@ -5,7 +5,7 @@
 <head>
 
     <meta author="Mateusz Pach, Szymon Cader">
-    <meta name ='description' content='Tablica ogłoszeń V Liceum Ogólnokształcącego w Bielsku-Białej'>
+    <meta name='description' content='Tablica ogłoszeń V Liceum Ogólnokształcącego w Bielsku-Białej'>
     <title>Ogłoszenia</title>
 
     <meta charset="UTF-8">
@@ -26,8 +26,8 @@
 
     <!-- TEMPORARY ADDRESS!!! CHANGE AFTER UPLOAD!!! -->
     <script src="http://localhost:2403/dpd.js"></script>
-    
-    
+
+
     <!-- Countdown script -->
     <script src="countdown.js"></script>
     <!-- News script -->
@@ -39,7 +39,7 @@
 
     <!-- Stylesheets -->
     <!-- Bootstrap CSS 3.3.7 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Google Fonts Lato -->
     <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
     <!-- Main CSS file -->
@@ -53,50 +53,51 @@
 
         <header>
 
-            <div id="clock">
-                
+            <div id="user-panel">
+                <p>Witaj (username)!</p>
+                    <div id="user-panel-buttons">
+                    <div id="account" class="button">Konto</div>
+                    <div id="logout" class="button">Wyloguj</div>
+                    <div style="clear:both;"></div>
+                </div>
             </div>
             <div id="headertext">
                 <h1>Admin Panel</h1>
                 <img src="logo.svg" alt="">
             </div>
-            
+
             <div style="clear:both;"></div>
 
         </header>
 
-        
+
         <section id="sidebar">
-            <div class="title">
-                <h3></h3>
-                <div class="titlebuttons add"></div>
-                <div class="titlebuttons">  
+            <div class="title-container">
+                <div class="title">
+                    <h3></h3>
+                </div>
+                <div class="options-button"></div>
             </div>
-            <div class="title"><h3></h3></div>
-            <div class="title"><h3></h3></div>
-            <div class="title"><h3></h3></div>
-            <div class="title"><h3></h3></div>
-            <div class="title"><h3></h3></div>
-            <div class="title"><h3></h3></div>
-            <div class="title"><h3></h3></div>
-            <div class="title"><h3></h3></div>
-            <div class="title"><h3></h3></div>
+            <div class="title-container">
+                <div class="title">
+                    <h3></h3>
+                </div>
+                <div class="options-button"></div>
+            </div>
         </section>
         <section id="content">
-            <div id="form">
-                <label>Tytuł (max. 32 znaki)</label>
-                <input type="text" maxlength="32"/>
-                <label>Treść (max. 400 znaków)</label>
-                <textarea maxlength="400"> </textarea>
-                <div id="exit" class="option">Porzuć</div>
-                <div id="back" class="option">Wróć</div>
-                <div id="submit" class="option">Zapisz</div>
-                <div style="clear:both;"></div>
-            </div>
-            <div id="chooseform">
-                <div id="new" class="option"></div>
-                <div id="edit" class="option"></div>
-                <div id="use" class="option"></div>
+            <div id="form-container">
+                <div id="form">
+                    <label>Tytuł (max. 32 znaki)</label>
+                    <input type="text" maxlength="32" />
+                    <label>Treść (max. 400 znaków)</label>
+                    <textarea maxlength="400"> </textarea>
+
+                    <div id="submit"> Gotowe! </div>
+                </div>
+
+                <div id="exit"> &#10006 </div>
+
             </div>
         </section>
 
@@ -104,7 +105,7 @@
             &copy 2017
         </footer>
 
-    </div>
+        </div>
 
 </body>
 
