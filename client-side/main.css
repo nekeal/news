@@ -1,7 +1,8 @@
-html{
-	/*zoom: 0.666666;*/
+html {
+    /*zoom: 0.666666;*/
 }
-body{
+
+body {
     background: #222;
     color: #1a4c67;
     margin: 0;
@@ -9,18 +10,19 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-p, h1{
+p,
+h1 {
     line-height: 1.1;
 }
 
-.container{
-    margin: 0;
+.container {
     padding: 0;
+    margin: 0;
     width: 100%;
     height: 1080px;
 }
 
-header{
+header {
     height: 100px;
     margin: 0;
     background: #1a4c67;
@@ -28,7 +30,7 @@ header{
     text-align: center;
 }
 
-#alarm{
+#alarm {
     clear: both;
     height: 60px;
     padding: 5px 0;
@@ -36,114 +38,126 @@ header{
     background-color: yellow;
     color: #1a4c67;
     text-align: center;
-    
     transition: background-color 0.5s ease-in;
+    border-right: 3px solid #1a4c67;
+    border-left: 3px solid #1a4c67;
 }
-h2{
+
+h2 {
     line-height: 1;
     font-size: 50px;
     margin: 0;
 }
 
-h1{
+h1 {
     font-size: 80px;
     margin: 0;
 }
 
-
-header>#headertext>img{
+header>#headertext>img {
     height: 100px;
     width: 100px;
     position: absolute;
-    top:5px;
+    top: 5px;
     right: 15px;
     /*border-right: 1px dotted #58C1E8 ;*/
 }
 
-#clock{
+#clock-container {
     height: 100px;
     width: 25%;
     float: left;
-    border-right:2px dotted #58C1E8 ;
-    padding: 5px 0;
 }
 
-#clock>p{
+#clock {
+    margin: 5px 0;
+    border-right: 2px solid #fff;
+    /* border-right:2px dotted #58C1E8 ; */
+}
+
+#clock>p {
     font-size: 80px;
     margin: 0;
     padding: 0;
 }
 
-#headertext{
+#headertext {
     float: left;
     width: 75%;
     text-transform: uppercase;
     padding: 5px 0;
 }
 
-#sidebar{
+#sidebar {
     position: relative;
     float: left;
     width: 25%;
     height: 900px;
-
-    background: #222;
+    background: #1a4c67;
 }
 
-#content{
+#content {
     position: relative;
     float: left;
     width: 75%;
     height: 900px;
-    
     background: #d8ecf3;
+    border-right: 3px solid #1a4c67;
+    border-bottom: 3px solid #1a4c67;
 }
 
-#content>p{
+#content>p {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -25% 0 0 -50%;
+    margin: -15% 0 0 -50%;
     width: 100%;
     height: 800px;
     padding: 0 10%;
     font-size: 50px;
 }
 
-
-.title{
+.title {
     height: 10%;
     position: relative;
     text-align: center;
-    background-color: #58C1E8;
-    border-right: 2px dotted #58C1E8;
-    border-left: 2px dotted #58C1E8;
+    background-color: #1983C2;
+    border-left: 3px solid #1a4c67;
+    border-right: 3px solid #1a4c67;
+    border-bottom: 3px solid #1a4c67;
     -webkit-transition: background-color 0.5s ease-in;
     -moz-transition: background-color 0.5s ease-in;
     -ms-transition: background-color 0.5s ease-in;
     -o-transition: background-color 0.5s ease-in;
     transition: background-color 0.5s ease-in;
-}
-.title.active{
-    background-color: #d8ecf3;
+    color: #fff;
 }
 
-h3{
+.title.active {
+    background-color: #d8ecf3;
+    color: #1a4c67;
+    border-right: none;
+}
+
+.inactive {
+    display: none;
+}
+
+h3 {
     position: absolute;
     top: 50%;
     height: 100%;
     width: 100%;
-    font-size: 40px;    
+    font-size: 40px;
     margin: -20px 0 0 0;
     padding: 0;
 }
 
-footer{
-    height:20px;
+footer {
+    height: 20px;
     background: #1a4c67;
     width: 100%;
     color: #d8ecf3;
     text-align: center;
 }
-

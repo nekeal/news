@@ -1,4 +1,4 @@
-body{
+body {
     background: #222;
     color: #1a4c67;
     margin: 0;
@@ -6,18 +6,19 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-p, h1{
+p,
+h1 {
     line-height: 1.1;
 }
 
-.container{
+.container {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 1080px;
 }
 
-header{
+header {
     height: 100px;
     margin: 0;
     background: #1a4c67;
@@ -25,47 +26,51 @@ header{
     text-align: center;
 }
 
-h2{
+h2 {
     line-height: 1;
     font-size: 50px;
     margin: 0;
 }
 
-h1{
+h1 {
     font-size: 80px;
     margin: 0;
 }
 
-
-header>#headertext>img{
+header>#headertext>img {
     height: 100px;
     width: 100px;
     position: absolute;
-    top:5px;
+    top: 5px;
     right: 15px;
-    /*border-right: 1px dotted #58C1E8 ;*/
+    /*border-right: 2px dotted #58C1E8 ;*/
 }
 
-#user-panel{
+#user-panel-container {
     height: 100px;
     width: 25%;
     float: left;
-    border-right:2px dotted #58C1E8 ;
-    padding: 10px 0;
 }
 
-#user-panel>p{
+#user-panel {
+    height: 90px;
+    margin: 5px 0;
+    border-right: 2px solid #fff; 
+}
+
+#user-panel>p {
     font-size: 30px;
+    padding: 5px 0 0 0;
     margin: 0;
-    padding: 0;
 }
 
-#user-panel-buttons{
+#user-panel-buttons {
     width: 240px;
     margin: 10px auto;
 }
 
-#user-panel-buttons>.button{
+#user-panel-buttons>.button {
+    border-radius: 5px;
     position: relative;
     height: 30px;
     width: 100px;
@@ -78,106 +83,133 @@ header>#headertext>img{
     transition: background-color 0.1s linear;
 }
 
-#user-panel-buttons>.button:hover{
+#user-panel-buttons>.button:hover {
     background-color: #aaa;
     cursor: pointer;
 }
 
-#user-panel-buttons>.button:active{
+#user-panel-buttons>.button:active {
     background-color: #777;
     cursor: pointer;
 }
 
-
-
-#headertext{
+#headertext {
     float: left;
     width: 75%;
     text-transform: uppercase;
     padding: 5px 0;
 }
 
-#sidebar{
+#sidebar {
     position: relative;
     float: left;
     width: 25%;
     height: 900px;
-
-    background: #222;
+    background: #1a4c67;
 }
 
-#content{
+#content {
     position: relative;
     float: left;
     width: 75%;
     height: 900px;
-    background: #d8ecf3; 
+    background: #000;
 }
 
-.title{
-    height: 10%;
+.title {
+    height: 90px;
     position: relative;
     text-align: center;
-    background-color: #58C1E8;
-    border-right: 2px dotted #58C1E8;
-    border-left: 2px dotted #58C1E8;
-    width: 80%;
-    float: left;
-    -webkit-transition: background-color 0.5s ease-in;
-    -moz-transition: background-color 0.5s ease-in;
-    -ms-transition: background-color 0.5s ease-in;
-    -o-transition: background-color 0.5s ease-in;
-    transition: background-color 0.5s ease-in;
+    /* background-color: #58C1E8; */
+    background: #1983C2;
+    color: #fff;
+    border-left: 3px solid #1a4c67;
+    border-right: 3px solid #1a4c67;
+    border-bottom: 3px solid #1a4c67;
 }
-.title.active{
+
+.active {
     background-color: #d8ecf3;
+    border-right: none;
+    color: #1a4c67;
 }
 
-.options-button{
-    float:left;
-    
+.inactive {
+    display: none;
 }
 
-h3{
+.options-button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    transition: background-color 0.1s linear;
+    color: #1983C2;
+    font-size: 50px;
+    padding: 5px;
+    line-height: 0.9;
+    border-radius: 5px;
+}
+
+.options-button:hover {
+    background-color: #476f85;
+    cursor: pointer;
+}
+
+.options-button:active {
+    background-color: #7593a3;
+}
+
+h3 {
     position: absolute;
     top: 50%;
     height: 100%;
     width: 100%;
-    font-size: 40px;    
-    margin: -20px 0 0 0;
+    font-size: 40px;
+    margin: -20px 0 0 -44px;
     padding: 0;
 }
 
-footer{
-    height:20px;
+footer {
+    height: 20px;
     background: #1a4c67;
     width: 100%;
     color: #d8ecf3;
     text-align: center;
 }
 
-#form-container{
-     display: none;  
+#form-container {
+    /* display: none;    */
     width: 100%;
     height: 100%;
-    background: #DAE2E6;
+    /* background: #DAE2E6;   */
+    background: #d8ecf3;
 }
 
-#form{
+#form {
     width: 80%;
     height: 500px;
     position: relative;
     margin: 0 auto;
-    padding: 150px 0 0 0;
-
+    padding: 10px 0 0 0;
 }
 
-label{
+#form>h2 {
+    margin: 70px 0 40px 0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+label {
     margin: 0;
     font-size: 18px;
 }
 
-input{
+input {
+    border-radius: 5px;
     font-size: 20px;
     width: 100%;
     margin: 10px 0 50px 0;
@@ -185,6 +217,7 @@ input{
 }
 
 textarea {
+    border-radius: 5px;
     font-size: 20px;
     margin: 10px 0 50px 0;
     width: 100%;
@@ -193,7 +226,8 @@ textarea {
     border: 1px solid #1a4c67;
 }
 
-#submit{
+#submit {
+    border-radius: 5px;
     margin: 20px auto;
     width: 200px;
     height: 60px;
@@ -207,15 +241,15 @@ textarea {
     cursor: pointer;
 }
 
-#submit:hover{
+#submit:hover {
     background-color: #008000;
 }
 
-#submit:active{
+#submit:active {
     background-color: #329932;
 }
 
-#exit{
+#exit {
     color: #1a4c67;
     font-size: 60px;
     width: 60px;
@@ -228,16 +262,28 @@ textarea {
     cursor: pointer;
 }
 
-#exit:hover{
+#exit:hover {
     animation: rotate 0.1s linear;
-    
+}
+
+#exit:active {
+    animation: zoom 0.1s linear;
 }
 
 @keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.3, 1.3);
+    }
 }
