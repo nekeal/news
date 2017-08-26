@@ -53,6 +53,8 @@
 
         <header>
 
+            <>
+
             <div id="user-panel-container">
                 <div id="user-panel">
                     <p>Witaj (username)!</p>
@@ -124,8 +126,8 @@
 
         </section>
         <section id="content">
-            <div id="form-container">
-                <div id="form">
+            <div id="edit-form" class="container">
+                <div id="edit-form-box">
                     <h2>Edytuj ogłoszenie</h2>
                     <label>Tytuł (max. 32 znaki)</label>
                     <input type="text" maxlength="32" />
@@ -138,11 +140,58 @@
                 <div id="exit"> &#10006; </div>
 
             </div>
+
+            <div id="options-form" class="container">
+
+                <h2>Co zrobić z tym ogłoszeniem?</h2>
+
+                <div id="options-form-box">
+                    <div id="swap-button" class="option-button"> Zamień </div>
+                    <div id="swap-desc" class="option-desc"> Zastąp wybrane ogłoszenie innym. </div>
+                    <div style="clear:both;"></div>
+
+                    <div id="edit-button" class="option-button"> Edytuj </div>
+                    <div id="edit-desc" class="option-desc"> Zedytuj wybrane ogłoszenie. </div>
+                    <div style="clear:both;"></div>
+
+                    <div id="archive-button" class="option-button"> Archiwizuj </div>
+                    <div id="archive-desc" class="option-desc"> Przenieś wybrane ogłoszenie do archiwum. </div>
+                    <div style="clear:both;"></div>
+                </div>
+
+
+
+                <div id="exit"> &#10006; </div>
+
+            </div>
+
+            <div id="archive-form" class="container">
+
+                <h2>Jesteś pewien?</h2>
+
+                <div id="options-form-box">
+                    
+                    <p> Zarchiwizowane ogłoszenie nie będzie się wyświeltlać, <br> ale w przyszłości będziesz mógł go znowu użyć. </p>
+
+                    <div id="yesno-buttons-box">
+                    <div id="swap-button" class="option-button"> Tak </div>
+                    
+
+                    <div id="edit-button" class="option-button"> Nie </div>
+                    <div style="clear:both;"></div>
+                    </div>
+                </div>
+
+
+
+                <div id="exit"> &#10006; </div>
+
+            </div>
         </section>
         <div style="clear:both;"></div>
 
         <footer>
-            &copy; 2017 Mateusz Pach, Szymon Cader 
+            &copy; 2017 Mateusz Pach, Szymon Cader
         </footer>
 
     </div>

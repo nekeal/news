@@ -26,12 +26,6 @@ header {
     text-align: center;
 }
 
-h2 {
-    line-height: 1;
-    font-size: 50px;
-    margin: 0;
-}
-
 h1 {
     font-size: 80px;
     margin: 0;
@@ -55,7 +49,7 @@ header>#headertext>img {
 #user-panel {
     height: 90px;
     margin: 5px 0;
-    border-right: 2px solid #fff; 
+    border-right: 2px solid #fff;
 }
 
 #user-panel>p {
@@ -113,7 +107,8 @@ header>#headertext>img {
     float: left;
     width: 75%;
     height: 900px;
-    background: #000;
+    background: #fff;
+    border-right: 3px solid #1a4c67;
 }
 
 .title {
@@ -180,15 +175,14 @@ footer {
     text-align: center;
 }
 
-#form-container {
-    /* display: none;    */
+.container { 
     width: 100%;
     height: 100%;
     /* background: #DAE2E6;   */
     background: #d8ecf3;
 }
 
-#form {
+#edit-form-box {
     width: 80%;
     height: 500px;
     position: relative;
@@ -196,11 +190,12 @@ footer {
     padding: 10px 0 0 0;
 }
 
-#form>h2 {
-    margin: 70px 0 40px 0;
+h2 {
+    margin: 90px 0 40px 0;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 50px;
 }
 
 label {
@@ -286,4 +281,70 @@ textarea {
     100% {
         transform: scale(1.3, 1.3);
     }
+}
+
+#options-form-box {
+    width: 800px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+.option-button {
+    border-radius: 5px;
+    margin: 20px 30px 20px 0;
+    width: 200px;
+    height: 60px;
+    background: #1a4c67;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 5px 0;
+    text-align: center;
+    transition: background-color 0.1s linear;
+    cursor: pointer;
+    float: left;
+}
+
+.option-button:hover {
+    background-color: #008000;
+}
+
+.option-button:active {
+    background-color: #329932;
+}
+
+.option-desc{
+    height: 60px;
+    float: left;
+    font-size: 30px;
+    padding: 15px 0;
+    line-height: 2;
+}
+
+#archive-form p{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 30px;
+}
+
+#yesno-buttons-box{
+    width: 460px;
+    margin: 0 auto;
+}
+
+
+
+
+#edit-form{
+      display: none;     
+}
+
+#options-form{
+      display: none;     
+}
+
+#archive-form{
+      display: none;
 }
