@@ -49,11 +49,31 @@
 
 <body>
 
+    <div id="login-page">
+        <div id="login-form">
+            <img src="logo.svg" alt="">
+            <h1>Panel Administracyjny <br> Tablicy Ogłoszeń</h1>
+            <form>
+                <label>Login</label>
+                <input type="text" name="login">
+                <div style="clear:both;"></div>
+                <br>
+                <label>Hasło</label>
+                <input type="password" name="password">
+                <div style="clear:both;"></div>
+                <div id="login-button">Zaloguj</div>
+            </form>
+        </div>
+
+        
+        <h5>&copy; 2017 Mateusz Pach, Szymon Cader</h5>
+        
+    </div>
+
     <div class="container">
 
         <header>
 
-            <>
 
             <div id="user-panel-container">
                 <div id="user-panel">
@@ -134,7 +154,7 @@
                     <label>Treść (max. 400 znaków)</label>
                     <textarea maxlength="400"> </textarea>
 
-                    <div id="submit"> Gotowe! </div>
+                    <div id="submit-button"> Gotowe! </div>
                 </div>
 
                 <div id="exit"> &#10006; </div>
@@ -170,15 +190,16 @@
                 <h2>Jesteś pewien?</h2>
 
                 <div id="options-form-box">
-                    
-                    <p> Zarchiwizowane ogłoszenie nie będzie się wyświeltlać, <br> ale w przyszłości będziesz mógł go znowu użyć. </p>
+
+                    <p> Zarchiwizowane ogłoszenie nie będzie się wyświeltlać, <br> ale w przyszłości będziesz mógł go znowu użyć.
+                    </p>
 
                     <div id="yesno-buttons-box">
-                    <div id="swap-button" class="option-button"> Tak </div>
-                    
+                        <div id="swap-button" class="option-button"> Tak </div>
 
-                    <div id="edit-button" class="option-button"> Nie </div>
-                    <div style="clear:both;"></div>
+
+                        <div id="edit-button" class="option-button"> Nie </div>
+                        <div style="clear:both;"></div>
                     </div>
                 </div>
 
