@@ -27,13 +27,12 @@
     <!-- TEMPORARY ADDRESS!!! CHANGE AFTER UPLOAD!!! -->
     <script src="http://localhost:2403/dpd.js"></script>
 
-
-    <!-- Countdown script -->
-    <script src="countdown.js"></script>
     <!-- News script -->
     <script src="news.js"></script>
-    <!-- Clock script -->
-    <script src="clock.js"></script>
+    <!-- News-managment script -->
+    <script src="news_managment.js"></script>
+    <!-- Authentication script -->
+    <script src="auth.js"></script>
     <!-- Main JS file -->
     <script src="main.js"></script>
 
@@ -55,13 +54,15 @@
             <h1>Panel Administracyjny <br> Tablicy Ogłoszeń</h1>
             <form>
                 <label>Login</label>
-                <input type="text" name="login">
+                <input id="login" type="text" name="login">
                 <div style="clear:both;"></div>
                 <br>
                 <label>Hasło</label>
-                <input type="password" name="password">
+                <input id="password" type="password" name="password">
                 <div style="clear:both;"></div>
-                <div id="login-button">Zaloguj</div>
+
+                <h4>Niepoprawny login lub hasło.</h4>
+                <button id="login-button">Zaloguj</button>
             </form>
         </div>
 
@@ -79,8 +80,8 @@
                 <div id="user-panel">
                     <p>Witaj (username)!</p>
                     <div id="user-panel-buttons">
-                        <div id="account" class="button">Konto</div>
-                        <div id="logout" class="button">Wyloguj</div>
+                        <button id="account-button" class="user-panel-button">Konto</button>
+                        <button id="logout-button" class="user-panel-button">Wyloguj</button>
                         <div style="clear:both;"></div>
                     </div>
                 </div>
@@ -100,43 +101,43 @@
 
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
             <div class="title">
                 <span class="title-var"><h3></h3></span>
-                <div class="options-button">&#10132;</div>
+                <button class="options-button">&#10132;</button>
             </div>
 
 
@@ -146,7 +147,7 @@
 
         </section>
         <section id="content">
-            <div id="edit-form" class="container">
+            <div id="edit-form" class="form-container">
                 <div id="edit-form-box">
                     <h2>Edytuj ogłoszenie</h2>
                     <label>Tytuł (max. 32 znaki)</label>
@@ -154,38 +155,38 @@
                     <label>Treść (max. 400 znaków)</label>
                     <textarea maxlength="400"> </textarea>
 
-                    <div id="submit-button"> Gotowe! </div>
+                    <button id="submit-button"> Gotowe! </button>
                 </div>
 
-                <div id="exit"> &#10006; </div>
+                <button class="exit"> &#10006; </button>
 
             </div>
 
-            <div id="options-form" class="container">
+            <div id="options-form" class="form-container">
 
                 <h2>Co zrobić z tym ogłoszeniem?</h2>
 
                 <div id="options-form-box">
-                    <div id="swap-button" class="option-button"> Zamień </div>
+                    <button id="swap-button" class="option-button"> Zamień </button>
                     <div id="swap-desc" class="option-desc"> Zastąp wybrane ogłoszenie innym. </div>
                     <div style="clear:both;"></div>
 
-                    <div id="edit-button" class="option-button"> Edytuj </div>
+                    <button id="edit-button" class="option-button"> Edytuj </button>
                     <div id="edit-desc" class="option-desc"> Zedytuj wybrane ogłoszenie. </div>
                     <div style="clear:both;"></div>
 
-                    <div id="archive-button" class="option-button"> Archiwizuj </div>
+                    <button id="archive-button" class="option-button"> Archiwizuj </button>
                     <div id="archive-desc" class="option-desc"> Przenieś wybrane ogłoszenie do archiwum. </div>
                     <div style="clear:both;"></div>
                 </div>
 
 
 
-                <div id="exit"> &#10006; </div>
+                <button class="exit"> &#10006; </button>
 
             </div>
 
-            <div id="archive-form" class="container">
+            <div id="archive-form" class="form-container">
 
                 <h2>Jesteś pewien?</h2>
 
@@ -195,17 +196,17 @@
                     </p>
 
                     <div id="yesno-buttons-box">
-                        <div id="swap-button" class="option-button"> Tak </div>
+                        <button id="swap-button" class="option-button"> Tak </button>
 
 
-                        <div id="edit-button" class="option-button"> Nie </div>
+                        <button id="edit-button" class="option-button"> Nie </button>
                         <div style="clear:both;"></div>
                     </div>
                 </div>
 
 
 
-                <div id="exit"> &#10006; </div>
+                <button class="exit"> &#10006; </button>
 
             </div>
         </section>
