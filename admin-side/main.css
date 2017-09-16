@@ -72,7 +72,7 @@ header>#headertext>img {
     float: left;
     padding: 0;
     font-size: 20px;
-    color: #1a4c67;
+    color: #1983C2;
     margin: 0 10px;
     transition: background-color 0.1s linear;
 }
@@ -262,6 +262,7 @@ textarea {
     top: 25px;
     right: 25px;
     cursor: pointer;
+    background-color: #d8ecf3;
 }
 
 .exit:hover {
@@ -479,4 +480,9 @@ h5{
     background: #d8ecf3;
     margin: 0;
     padding: 100px 0;
+    text-align: center;
+}
+
+.form-container p{
+    font-size: 30px;
 }

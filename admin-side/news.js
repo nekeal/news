@@ -17,6 +17,9 @@
 //array of news objects (global so news_mangment() can use it) 
 var News; 
 
+//contains timeout function so news_mangment() can use it to force titles refresh
+var TitlesRefreshTimeout;
+
 function news() {
 
 
@@ -66,16 +69,11 @@ function news() {
 
             }
 
-            setTimeout(function(){
+            TitlesRefreshTimeout=setTimeout(function(){
                 getNews(refreshTitles);
             }, TitlesRefresh);
     };
 
     getNews(refreshTitles);
-
-    $(".options-button").click( function() {
-            console.log($(".options-button").index(this));
-        
-    });
 
 };

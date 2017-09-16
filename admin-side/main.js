@@ -14,12 +14,6 @@ $(function () {
 
     $('form').submit(function(e){ e.preventDefault(); });
 
-    // $("#login-form input").keypress(function (e) {
-    // if (e.keyCode == 13) {
-    //     alert('You pressed enter!');
-    // }
-    // });
-
 
     $("#login-button").click(function () {
 
